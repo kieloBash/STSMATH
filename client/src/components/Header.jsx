@@ -18,13 +18,13 @@ export const Header = () => {
             <br className="hidden md:block" />{" "}
             <span className="relative inline-block px-2">
               <div className="absolute inset-0 transform -skew-x-12 bg-teal-accent-400" />
-              <span className="relative text-blue-600 text-6xl">STSMATH</span>
+              <span className="relative text-teal-400 text-6xl">STSMATH</span>
             </span>
           </h2>
           <p className="mb-6 text-base text-indigo-100 md:text-lg">
             Here, you will find a comprehensive review of formulas and
             equations, along with step-by-step solutions to a range of practice
-            problems to help you pass <span className="relative text-blue-600">STSMATH</span>.{" "}
+            problems to help you pass <span className="relative text-teal-400">STSMATH</span>.{" "}
           </p>
           <button
             href="/"

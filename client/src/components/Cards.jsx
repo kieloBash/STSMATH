@@ -26,9 +26,7 @@ import {
             1st Topic
           </Typography> */}
           <Typography
-            variant="h1"
-            color="white"
-            className=" flex justify-center gap-1 text-7xl font-normal"
+            className=" flex justify-center gap-1 text-7xl font-semibold text-teal-500"
           >
             <span className="mt-2 text-4xl font-semibold">{props.name}</span>
           </Typography>
