@@ -4,7 +4,7 @@ export const Header = () => {
       <div className="absolute inset-x-0 bottom-0">
         <svg
           viewBox="0 0 224 12"
-          fill="black"
+          // fill="black"
           className="w-full -mb-1 text-white"
           preserveAspectRatio="none"
         >

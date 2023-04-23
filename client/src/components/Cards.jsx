@@ -7,10 +7,11 @@ import {
     Button,
   } from "@material-tailwind/react";
   import { CheckIcon } from "@heroicons/react/24/outline";
-   
-  export default function Cards() {
+  import { Link } from "react-router-dom";
+
+  export default function Cards(props) {
     return (
-      <Card variant="gradient" className="rounded-lg w-full max-w-[20rem] p-8 bg-gradient-to-b from-neutral-800 via-blue-900 to-blue-600">
+      <Card variant="gradient" className="rounded-lg w-full max-w-[24rem] p-8 bg-gradient-to-b from-neutral-800 via-blue-900 to-blue-600">
         <CardHeader
           floated={false}
           shadow={false}
@@ -29,7 +30,7 @@ import {
             color="white"
             className=" flex justify-center gap-1 text-7xl font-normal"
           >
-            <span className="mt-2 text-4xl font-semibold">Derivatives</span>
+            <span className="mt-2 text-4xl font-semibold">{props.name}</span>
           </Typography>
         </CardHeader>
         <CardBody className="p-0 text-white">
@@ -54,16 +55,15 @@ import {
             </li>
           </ul>
         </CardBody>
-        <CardFooter className="mt-16 p-0">
+        <CardFooter className="mt-16 p-0 mb-6">
+          <Link to={props.link}> 
           <Button
-            size="lg"
-            color="white"
-            className="text-blue-500 hover:scale-[1.02] focus:scale-[1.02] active:scale-100 bg-white"
-            ripple={false}
+            className="text-white hover:scale-[1.02] focus:scale-[1.02] active:scale-100 bg-transparent border-white border-2 py-2"
             fullWidth={true}
           >
             Go to Page
           </Button>
+          </Link>
         </CardFooter>
       </Card>
     );
