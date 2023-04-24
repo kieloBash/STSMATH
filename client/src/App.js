@@ -10,7 +10,7 @@ function App() {
     <div className="App w-screen h-screen bg-gradient-to-b from-black via-black to-blue-900">
        <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="https://kielobash.github.io/STSMATH/" element={<Home />}></Route>
           <Route path="/derivatives" element={<Derivatives />}></Route>
           <Route path="/antiderivatives" element={<AntiDerivatives />}></Route>
           <Route path="/conic" element={<Conic />}></Route>
