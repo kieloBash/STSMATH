@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import Cards from "../components/Cards";
 
 const Home = () => {
-  const cards = [{ name: "Derivatives", link:'/derivatives' },{ name: "Anti Derivatives", link:'/antiderivatives' },{ name: "Conic Sections", link:'/conic' },];
+  const cards = [{ name: "Derivatives", link:'/STSMATH/derivatives' },{ name: "Anti Derivatives", link:'/STSMATH/antiderivatives' },{ name: "Conic Sections", link:'/STSMATH/conic' },];
   return (
     <div className="bg-gradient-to-b from-black via-black to-blue-900 flex flex-col">
       <Header></Header>
