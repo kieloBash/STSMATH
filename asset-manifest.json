@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/STSMATH/static/css/main.18a0a3db.css",
-    "main.js": "/STSMATH/static/js/main.089adb30.js",
+    "main.js": "/STSMATH/static/js/main.662b20d0.js",
     "index.html": "/STSMATH/index.html",
     "main.18a0a3db.css.map": "/STSMATH/static/css/main.18a0a3db.css.map",
-    "main.089adb30.js.map": "/STSMATH/static/js/main.089adb30.js.map"
+    "main.662b20d0.js.map": "/STSMATH/static/js/main.662b20d0.js.map"
   },
   "entrypoints": [
     "static/css/main.18a0a3db.css",
-    "static/js/main.089adb30.js"
+    "static/js/main.662b20d0.js"
   ]
 }
