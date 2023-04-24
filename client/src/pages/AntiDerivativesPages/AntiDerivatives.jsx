@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import SideBar from "../components/SideBar";
-import PagesHeader from "../components/PagesHeader";
+import SideBar from "../../components/SideBar";
+import PagesHeader from "../../components/PagesHeader";
 
 const AntiDerivatives = () => {
   const [score, setScore] = useState(1);
+  const percent = (score / 20) * 100;
   const topics = [
     {
       title: "Antidifferentiation",
@@ -18,14 +19,13 @@ const AntiDerivatives = () => {
       content: " - solving to the value for a given limit",
     },
   ];
-  const percent = (score / 20) * 100;
   return (
     <div className="bg-slate-900 h-screen w-screen">
-      <SideBar page={'/antiderivatives'}/>
+      <SideBar page={"/antiderivatives"} />
       <div className="ml-20 flex flex-col">
         <PagesHeader title={"AntiDerivatives"} />
         <div className="flex justify-center items-center">
-          <div className="grid grid-cols-2 gap-0">
+          <div className="grid grid-flow-col-dense gap-8">
             <div className="flex flex-col justify-between text-teal-300 drop-shadow-xl bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-slate-600 to-teal-700 opacity-75 w-72 max-h-96 min-h-56 rounded-md p-4">
               <div className="flex items-center group cursor-pointer mb-4">
                 <h1 className="text-3xl font-light mb-2 text-white group-hover:text-teal-300 duration-300">
@@ -192,6 +192,71 @@ const AntiDerivatives = () => {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 flex flex-col justify-evenly items-center text-teal-300 drop-shadow-xl bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-slate-600 to-teal-700 opacity-75 min-w-[44rem] mx-auto min-h-[220px] rounded-md p-4">
+          <div className="flex items-center group cursor-pointer mb-4 justify-center">
+            <h1 className="text-3xl font-light text-white group-hover:text-teal-300 duration-300">
+              Formulas to Remember
+            </h1>
+          </div>
+          <div className="flex justify-evenly items-center w-full">
+            <div className="grid grid-flow-col gap-8">
+              <div className="flex flex-col items-center drop-shadow-xl bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-slate-600 to-teal-700 max-w-32 max-h-full w-32 rounded-lg px-4 py-2">
+                <h1 className="text-xl mb-2">Standard</h1>
+                <div className="text-white relative flex flex-col items-center">
+                  <span className="text-[12px] ml-4 absolute">n+1</span>
+                  <div className="text-[20px] mr-4 mt-2">a</div>
+                  <div className="w-8 h-[2px] bg-white"></div>
+                  <div>n+1</div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center drop-shadow-xl bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-slate-600 to-teal-700 max-w-32 max-h-full w-32 rounded-lg px-4 py-2">
+                <h1 className="text-xl mb-2">Exponent</h1>
+                <div className="text-white relative flex flex-col items-center">
+                  <span className="text-[12px] ml-4 absolute">n+1</span>
+                  <div className="text-[20px] mr-4 mt-2">a</div>
+                  <div className="w-8 h-[2px] bg-white"></div>
+                  <div>n+1</div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center drop-shadow-xl bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-slate-600 to-teal-700 max-w-32 max-h-full w-32 rounded-lg px-4 py-2">
+                <h1 className="text-xl mb-2">Chain Rule</h1>
+                <div className="text-white relative flex flex-col items-center">
+                  <span className="text-[12px] ml-4 absolute">n+1</span>
+                  <div className="text-[20px] mr-4 mt-2">a</div>
+                  <div className="w-8 h-[2px] bg-white"></div>
+                  <div>n+1</div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center drop-shadow-xl bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-slate-600 to-teal-700 max-w-32 max-h-full w-32 rounded-lg px-4 py-2">
+                <h1 className="text-xl mb-2">Trigo</h1>
+                <div className="text-white relative flex flex-col items-center">
+                  <span className="text-[12px] ml-4 absolute">n+1</span>
+                  <div className="text-[20px] mr-4 mt-2">a</div>
+                  <div className="w-8 h-[2px] bg-white"></div>
+                  <div>n+1</div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center drop-shadow-xl bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-slate-600 to-teal-700 max-w-32 max-h-full w-32 rounded-lg px-4 py-2">
+                <h1 className="text-xl mb-2">ln</h1>
+                <div className="text-white relative flex flex-col items-center">
+                  <span className="text-[12px] ml-4 absolute">n+1</span>
+                  <div className="text-[20px] mr-4 mt-2">a</div>
+                  <div className="w-8 h-[2px] bg-white"></div>
+                  <div>n+1</div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center drop-shadow-xl bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-slate-600 to-teal-700 max-w-32 max-h-full w-32 rounded-lg px-4 py-2">
+                <h1 className="text-xl mb-2">log</h1>
+                <div className="text-white relative flex flex-col items-center">
+                  <span className="text-[12px] ml-4 absolute">n+1</span>
+                  <div className="text-[20px] mr-4 mt-2">a</div>
+                  <div className="w-8 h-[2px] bg-white"></div>
+                  <div>n+1</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
